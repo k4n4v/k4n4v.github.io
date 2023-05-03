@@ -17,3 +17,8 @@ h1 {
   margin: 0vh auto;
   padding-top: 2vh;
 }
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
