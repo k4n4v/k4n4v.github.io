@@ -1,0 +1,11 @@
+.contact-section {
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.contact-section img {
+  width: 8%;
+  object-fit: cover;
+  object-position: 50%;
+  margin: 3vh;
+}

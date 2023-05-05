@@ -1,0 +1,26 @@
+.sidebar-container {
+  border-left: 1px solid black;
+  width: 38%;
+  overflow: auto;
+  position: fixed;
+  top: calc(5vh + 101px);
+  bottom: 0;
+  right: 0;
+}
+
+.sidebar-item {
+  border-bottom: 1px solid black;
+  padding: 3vh 0;
+  padding-left: 1vw;
+  width: 87%;
+  box-sizing: border-box;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-item a:hover,
+.active {
+  color: var(--accent);
+}

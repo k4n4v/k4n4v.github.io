@@ -14,14 +14,15 @@ export default function Header() {
 
   return (
     <header>
-      <div className="titles">
+      <div className="pages">
         <h1 className="name">
           <Link to="/">Kanav Sharma</Link>
         </h1>
-        <p className="title">{getPage()}</p>
+        <p className="page-title">{getPage()}</p>
       </div>
       <div className="nav-container">
         <Link to="/">About</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </header>
   );
