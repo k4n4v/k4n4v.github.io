@@ -23,7 +23,7 @@ export default function About() {
           <div className="text">
             <p>I am a fourth year Computer Engineering (Co-op) student studying at the University of Guelph. I have a passion for technology and enjoy exploring how things work!</p>
             <br />
-            <p>Some of my intrests:</p>
+            <p>Some of my interests:</p>
             <li>Backend Development</li>
             <li>Building computers</li>
             <li>Video games</li>
