@@ -24,3 +24,18 @@
 .active {
   color: var(--accent);
 }
+
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    width: 95%;
+    border-right: none;
+    position: static;
+    overflow: initial;
+    border-top: 1px solid black;
+  }
+  .intro-container {
+    overflow: initial;
+    position: static;
+    padding-bottom: 4vh;
+  }
+}

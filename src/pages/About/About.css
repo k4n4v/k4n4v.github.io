@@ -50,3 +50,31 @@ p, ul {
 .experience-position {
   color: var(--body-grey);
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    overflow: auto;
+    position: fixed;
+    top: calc(5vh + 101px);
+    bottom: 0;
+    flex-direction: column;
+  }
+  .about .intro-container {
+    order: 1;
+  }
+  .about .sidebar-container {
+    order: 2;
+  }
+  .intro-container.about-intro-container {
+    width: 90%;
+  }
+  .info-section {
+    flex-direction: column;
+  }
+  .info-section img {
+    width: 100%;
+    padding-top: 5vh;
+    padding-left: 0px;
+  }
+}
