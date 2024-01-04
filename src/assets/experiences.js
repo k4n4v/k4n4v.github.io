@@ -18,7 +18,7 @@ const EXPERIENCES = [
         },
         position: 'Software Developer Intern',
         description:
-          '•	Developed REST API\'s to enhance customer engagement in a subscription-based model, benefiting 70+ clients.',
+          'Developed REST API\'s to enhance customer engagement in a subscription-based model, benefiting 70+ clients.',
         link: 'https://coderise.io/'
     },
     {
