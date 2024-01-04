@@ -1,5 +1,27 @@
 const EXPERIENCES = [
     {
+      company: 'Tulip',
+        dates: {
+          start: 'Sept. 2023',
+          end: 'Dec. 2023'
+        },
+        position: 'QA Engineer (Co-op)',
+        description:
+          'Performed daily regression tests and worked closely with developers to test and debug pre-merge changes. Identified a major security vulnerability bug prior to deployment, safeguarding 50+ client\'s sensitive information.',
+        link: 'https://www.tulip.com/'
+    },
+    {
+      company: 'CodeRise Technologies',
+        dates: {
+          start: 'July 2023',
+          end: 'Aug. 2023'
+        },
+        position: 'Software Developer Intern',
+        description:
+          '•	Developed REST API\'s to enhance customer engagement in a subscription-based model, benefiting 70+ clients.',
+        link: 'https://coderise.io/'
+    },
+    {
         company: 'Molex (Koch Industries)',
         dates: {
             start: 'Jan. 2022',

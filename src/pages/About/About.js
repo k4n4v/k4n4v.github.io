@@ -27,7 +27,7 @@ export default function About() {
             <li>Backend Development</li>
             <li>Building computers</li>
             <li>Video games</li>
-            <li>Traveling</li>
+            <li>Travelling</li>
             <li>Basketball</li>
             <br />
             <p>Things I want to learn more about:</p>
