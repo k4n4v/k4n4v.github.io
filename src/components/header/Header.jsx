@@ -16,7 +16,7 @@ const Header = () => {
         <div className="me">
           <img src={MEMOJI} alt='me' />
         </div>
-        <a href="mailto:kanav.12@hotmail.com" className='email'>kanav.12@hotmail.com</a>
+          <a href="mailto:kanav.12@hotmail.com" className='email'>kanav.12@hotmail.com</a>
         </div>
     </header>
   )
