@@ -10,7 +10,6 @@ header {
     position: relative;
 }
 
-/* ------- CTA --------- */
 .cta {
     margin-top: 2.5rem;
     display: flex;
@@ -18,25 +17,23 @@ header {
     justify-content: center;
 }
 
-/* ------- Header Socials --------- */
 .header__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 5rem;
     bottom: 3rem;
 }
 
 .header__socials::after {
     content: '';
     width: 1px;
-    height: 2rem;
+    height: 6rem;
     background: var(--color-primary);
 }
 
-/* ------- ME --------- */
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
@@ -49,29 +46,43 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
-/* ------- Scroll down --------- */
-.scroll__down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
+.email {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    gap: 4rem;
+    right: 0rem;
+    bottom: 6rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+    margin-bottom: 4rem;
 }
 
-/* ============================ Media Queries (Medium Devices) ================== */
+.email::after {
+    content: '';
+    transform: rotate(90deg);
+    width: 1px;
+    height: 6rem;
+    background: var(--color-primary);
+}
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
     header {
         height: 68vh;
     }
 }
 
+/* ================= MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
     }
 
-    .header__socials, .scroll__down {
+    .header__socials, 
+    .scroll__down {
         display: none;
     }
 }
