@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { projects } from "../../constants/index.js"
+import { projects } from "../../constants/projects.js"
 import { FiFolder } from "react-icons/fi";
 
 

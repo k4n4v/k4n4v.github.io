@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import MEMOJI from '../../assets/memoji.png'
+import { memoji } from "../../assets"
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
         <div className="me">
-          <img src={MEMOJI} alt='me' />
+          <img src={memoji} alt='memoji' />
         </div>
           <a href="mailto:kanav.12@hotmail.com" className='email'>kanav.12@hotmail.com</a>
         </div>
