@@ -29,7 +29,6 @@ const Experience = () => {
                   />
                 </div>
               }
-              lineColor="red"
             >
               <h3 className="experience__title">{title}</h3>
               <a href={company_url} target="_blank" rel="noopener noreferrer">

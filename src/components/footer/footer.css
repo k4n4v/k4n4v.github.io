@@ -1,5 +1,19 @@
 .footer__note {
     text-align: center;
     margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
 }
+
+.footer__socials {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    font-size: 2rem; /* Adjust icon size if needed */
+    text-decoration: none; /* Remove underline */
+  }
