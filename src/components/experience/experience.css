@@ -10,6 +10,10 @@
     color: var(--color-primary);
 }
 
+.experience__company a:hover {
+    color: var(--color-white);
+}
+
 .experience__location {
     color: var(--color-primary);
 }

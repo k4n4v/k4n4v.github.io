@@ -1,20 +1,32 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
+    height: 100vh; /* Full viewport height */
+    padding-top: 0; /* Remove top padding */
     overflow: hidden;
 }
 
 .header__container {
-    text-align: center;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     height: 100%;
-    position: relative;
+    text-align: left; /* Align text to the left */
+    gap: 1rem; /* Space between text and image */
+    flex-direction: row; /* Default to row direction */
+}
+
+.header__text {
+    max-width: 50%; /* Adjust based on how much space you want for text */
+}
+
+.header__text h5{
+    font-size: 1rem;
 }
 
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
+    justify-content: flex-start; /* Align CTA to the left */
 }
 
 .header__socials {
@@ -35,19 +47,15 @@ header {
 }
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .email {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     position: fixed;
@@ -89,6 +97,30 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+    }
+
+    .header__container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the left */
+        justify-content: center; /* Center items vertically */
+        text-align: left; /* Ensure text remains left-aligned */
+        gap: 0.1rem; /* Adjust spacing between text and image */
+        padding: 0 2rem; /* Add padding for better spacing on mobile */
+        margin-top: 2rem;
+    }
+
+    .header__text {
+        max-width: 100%; /* Ensure text takes full width on mobile */
+    }
+
+    h1 {
+        line-height: 1;
+        margin: 1rem 0;
+    }
+
+    .me {
+        margin-left: 0; /* Remove left margin on mobile */
+        margin-top: 0rem; /* Add space between text and image on mobile */
     }
 
     .header__socials,

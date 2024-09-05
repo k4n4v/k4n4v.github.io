@@ -1,41 +1,35 @@
 import React from 'react'
 import './about.css'
 import { me } from '../../assets'
-import { FaAward, FaUsers, FaFolder } from "react-icons/fa";
+import { FaAward, FaUsers } from "react-icons/fa";
 
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get To Know</h5>
+      <h5>Get To Know Me</h5>
       <h2>About Me</h2>
 
       <div className='container about__container'>
         <div className='about__me'>
           <div className="about__me-image">
-            <img src={me} alt='memoji' />
+            <img src={me} alt='me' />
           </div>
         </div>
 
         <div className='about__content'>
+          <p>Hey, I'm glad you found my site! I am a recent graduate based in Toronto with a degree in Computer Engineering who enjoys coding and solving problems.  I'm passionate about technology and eager to learn new things, always open-minded and interested in hearing others' stories and ideas. Outside of tech, I enjoy DJing (I’m still learning), lifting weights, watching car videos on YouTube, and playing sports like basketball, volleyball, swimming, and many more.</p>
           <div className="about__cards">
             <article className='about__card'>
-              <FaAward className='about__icon'/>
-              <h5>Experince</h5>
-              <small>3+ working experince</small>
+            <span className='about__icon'>🎓</span>
+              <h5>Computer Engineer</h5>
+              <small>Bachalor of Engineering</small>
             </article>
             <article className='about__card'>
-              <FaUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>300+ Worldwide</small>
-            </article>
-            <article className='about__card'>
-              <FaFolder className='about__icon'/>
-              <h5>Projects</h5>
-              <small>80+ completed projects</small>
+              <span className='about__icon'>🔍</span>
+              <h5>~1.5 YOE</h5>
+              <small>About 1.5 years of internship experinces</small>
             </article>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti voluptatem consequuntur omnis, nihil totam, illum nulla tenetur consequatur sed maiores mollitia reprehenderit suscipit quibusdam voluptates saepe, laborum minus ipsam.</p>
-          <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
     </section>

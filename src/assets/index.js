@@ -8,6 +8,9 @@ import memoji from "./memoji.png";
 
 import resume from "./resume.pdf";
 
+import ad from "./projects/ad.jpg"
+import security_camera from "./projects/security_camera.jpg"
+
 export {
     quartic,
     molex,
@@ -16,4 +19,6 @@ export {
     me,
     memoji,
     resume,
+    ad,
+    security_camera,
 }

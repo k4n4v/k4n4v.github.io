@@ -1,25 +1,31 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import { memoji } from "../../assets"
-import HeaderSocials from './HeaderSocials'
+import React from 'react';
+import './header.css';
+import { memoji } from "../../assets";
+import HeaderSocials from './HeaderSocials';
+import RESUME from '../../assets/resume.pdf'
+
 
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Kanav Sharma</h1>
-        <h5 className='text-light'>Fullstack Developer</h5>
-        <CTA />
-        <HeaderSocials />
+      <div className="header__container">
+        <div className="header__text">
+          <h5>Hello &#128075;</h5>
+          <h1>I'm Kanav Sharma.</h1>
+          <h5 className='text-light'>Computer engineer passionate about solving problems with code.</h5>
+          <div className='cta'>
+            <a href={RESUME} target="_blank" rel="noreferrer" className='btn'>Resume</a>
+            <a href="mailto:kanav.12@hotmail.com" className='btn btn-primary'>Email</a>
+          </div>
+        </div>
         <div className="me">
           <img src={memoji} alt='memoji' />
         </div>
-          <a href="mailto:kanav.12@hotmail.com" className='email'>kanav.12@hotmail.com</a>
-        </div>
+        <HeaderSocials />
+        <a href="mailto:kanav.12@hotmail.com" className='email'>kanav.12@hotmail.com</a>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

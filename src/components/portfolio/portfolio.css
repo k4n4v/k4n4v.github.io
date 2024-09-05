@@ -1,15 +1,20 @@
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 2.5rem; /* Space between the cards */
+    align-items: center;
+
 }
 
 .portfolio__item {
+    width: 60%; /* Each card takes full width */
     background: var(--color-bg-variant);
-    padding: 0rem;
+    padding: 2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    position: relative;
+    box-sizing: border-box;
 }
 
 .portfolio__item:hover {
@@ -17,68 +22,87 @@
     background: transparent;
 }
 
-.portfolio__item-image {
-    border-radius: 2rem;
-    overflow: hidden;
+.portfolio__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.portfolio__item h3 {
-    margin: 1.2rem 2rem 1rem;
+.portfolio__item h3, .portfolio__item h5 {
+    margin: 1rem 0;
 }
 
 .portfolio__item h5 {
-    margin: 1.2rem 2rem 1rem;
-    color: rgb(150, 156, 156);
+    color: var(--color-light);
 }
 
 .portfolio__item h4 {
-    margin: 0.5rem 2rem 1rem;
-    font-size: 12px;
+    margin: 0.5rem 0;
+    font-size: 13px;
     font-family: 'Courier New', monospace;
     color: rgb(116, 121, 121);
-    display: inline;
-    margin-right: 0rem;
-}
-
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-left: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap; /* Ensure tags wrap to the next line if needed */
+    display: inline-block;
+    margin-right: 1rem;
 }
 
 .portfolio__icon {
     color: var(--color-primary);
     font-size: 3rem;
-    margin: 1rem 1rem 1rem;
 }
 
-.portfolio__item-cta div {
-    display: flex;
-    gap: 1rem;
+.portfolio__item-image {
+    width: 200px;
+    height: auto; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    flex-shrink: 0;
+}
+
+.portfolio__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+}
+
+.portfolio__links {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-left: auto;
-    margin-right: 1rem;
 }
 
-/* ============================ Media Queries (Medium Devices) ================== */
+.portfolio__type h5 {
+    margin-bottom: 0.5rem;
+}
+
+/* Media Queries for responsiveness */
 @media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+    .portfolio__item {
+        width: 100%; /* Ensures full width on medium screens */
     }
 }
 
-/* ============================ Media Queries (Small Devices) ================== */
 @media screen and (max-width: 600px) {
     .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1rem; /* Reduce gap between cards on smaller screens */
+    }
+
+    .portfolio__item {
+        width: 100%; /* Each card takes full width */
+    }
+
+    .portfolio__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio__item-image {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%; /* Full width for images on small screens */
+        height: auto;
     }
 }

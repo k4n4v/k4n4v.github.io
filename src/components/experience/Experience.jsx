@@ -31,8 +31,8 @@ const Experience = () => {
               }
             >
               <h3 className="experience__title">{title}</h3>
-              <a href={company_url} target="_blank" rel="noopener noreferrer">
-                <h4 className="experience__company">{company_name}</h4>
+              <a className="experience__company" href={company_url} target="_blank" rel="noopener noreferrer">
+                <h4>{company_name}</h4>
               </a>
               {/*<h4 className='experience__location'>{location}</h4>*/}
               <h5 className='experience__description'>{description}</h5>
