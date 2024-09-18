@@ -11,7 +11,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className='container portfolio__container'>
         {
-          projects.map(({ id, type, title, description, tags, source_code_link, image }) => {
+          [...projects].reverse().map(({ id, type, title, description, tags, source_code_link, image }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-header'>

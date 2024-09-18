@@ -12,7 +12,7 @@ const Experience = () => {
       <h2>Experiences</h2>
       <VerticalTimeline lineColor='var(--color-white)'>
         {
-          experiences.map(({ id, title, company_name, company_url, location, icon, iconbg, date, description }) => (
+          [...experiences].reverse().map(({ id, title, company_name, company_url, location, icon, iconbg, date, description }) => (
             <VerticalTimelineElement
               key={id}
               className="vertical-timeline-element--work"
