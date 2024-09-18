@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.563faa63.css",
-    "main.js": "/static/js/main.49412d1b.js",
-    "static/media/ad.jpg": "/static/media/ad.27599d0195ef32490bc8.jpg",
+    "main.css": "/static/css/main.7feb5bf3.css",
+    "main.js": "/static/js/main.97441bcd.js",
     "static/media/me.jpg": "/static/media/me.41b488d7a30ed51632c8.jpg",
-    "static/media/security_camera.jpg": "/static/media/security_camera.a8c898367f291727a2eb.jpg",
-    "static/media/resume.pdf": "/static/media/resume.d68a152419c1ce82ebad.pdf",
+    "static/media/ad.jpg": "/static/media/ad.4af9adf7d814581d8663.jpg",
+    "static/media/security_camera.jpg": "/static/media/security_camera.40e278046a7e7c6d3694.jpg",
+    "static/media/scraper.png": "/static/media/scraper.8b73b958a5574015be62.png",
+    "static/media/resume.pdf": "/static/media/resume.092100fb1e56cb316983.pdf",
     "static/media/memoji.png": "/static/media/memoji.79ecd4ed96cd7c14de6d.png",
     "static/media/molex.jpg": "/static/media/molex.2fccb346fbca4e56586f.jpg",
     "static/media/coderise.jpg": "/static/media/coderise.481055d1eafb6c45a9fd.jpg",
     "index.html": "/index.html",
-    "main.563faa63.css.map": "/static/css/main.563faa63.css.map",
-    "main.49412d1b.js.map": "/static/js/main.49412d1b.js.map"
+    "main.7feb5bf3.css.map": "/static/css/main.7feb5bf3.css.map",
+    "main.97441bcd.js.map": "/static/js/main.97441bcd.js.map"
   },
   "entrypoints": [
-    "static/css/main.563faa63.css",
-    "static/js/main.49412d1b.js"
+    "static/css/main.7feb5bf3.css",
+    "static/js/main.97441bcd.js"
   ]
 }
