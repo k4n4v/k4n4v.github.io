@@ -2,7 +2,7 @@
 
 Welcome to my personal website repository! This project showcases my portfolio, work experience, and projects, designed to provide a comprehensive overview of my professional journey.
 
-https://github.com/user-attachments/assets/ecbe5a5f-f72f-4457-9b51-63cd050884c5
+https://github.com/user-attachments/assets/b4b6a61e-aa12-4b7c-8529-e6538ff355dc
 
 # Table of Contents
 1. [Overview](#Overview)
