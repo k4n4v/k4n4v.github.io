@@ -11,6 +11,7 @@ import resume from "./resume.pdf";
 import ad from "./projects/ad.jpg"
 import security_camera from "./projects/security_camera.jpg"
 import scraper from "./projects/scraper.png"
+import lyrics_translator from "./projects/lyrics_translator.png"
 
 export {
     quartic,
@@ -23,4 +24,5 @@ export {
     ad,
     security_camera,
     scraper,
+    lyrics_translator,
 }

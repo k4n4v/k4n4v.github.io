@@ -2,6 +2,7 @@ import {
     ad,
     scraper,
     security_camera,
+    lyrics_translator,
   } from "../assets";
 
 const projects = [
@@ -22,13 +23,14 @@ const projects = [
         id: 2,
         type: "🚀 PERSONAL DEVELOPMENT",
         title: "Spotify Lyrics Translator",
-        description: "Utilized 3 APIs to translate lyrics, with the song being sourced via Spotify link, lyrics fetched from Genius, and translation performed using Google Translator with the capability to pick from 133 languages..",
+        description: "The Spotify Song Lyrics Translator is a web-based application built using Python and Streamlit, which allows users to fetch song lyrics from Spotify and translate them into a language of their choice. This project integrates with the Spotify's API to retrieve song details, Genius API to retrieve song lyrics, and uses GoogleTranslator from deep-translator to handle the translation process.",
         tags: [
             { name: "Python"},
+            { name: "APIs"},
             { name: "Git"},
         ],
         source_code_link: "https://github.com/k4n4v/Spotify-Lyrics-Translator",
-        image: null
+        image: lyrics_translator
     },
     {
         id: 3,
