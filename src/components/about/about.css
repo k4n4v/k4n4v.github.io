@@ -2,15 +2,14 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 10%;
+    align-items: start;
 }
 
 .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary, transparent));
-    display: grid;
-    place-items: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, var(--color-primary, transparent));
 }
 
 .about__me-image {

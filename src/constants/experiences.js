@@ -2,7 +2,8 @@ import {
   quartic, 
   molex, 
   coderise, 
-  tulip, 
+  tulip,
+  boeing, 
 } from "../assets";
 
 const experiences = [
@@ -54,6 +55,19 @@ const experiences = [
       description:
         "During my time at Tulip, a SaaS company partnered with Apple and Salesforce, I gained extensive knowledge about the development lifecycle of iOS applications and the importance of client interactions in feature requirements. Tulip specializes in cloud-based retail solutions, enhancing customer engagement and omnichannel commerce for major luxury brands like Michael Kors, Versace, and Coach. My role involved performing daily regression tests, managing team sprint tickets, and collaborating with developers to test and debug clienteling and POS iOS applications. I contributed to the redesign of an iOS app, offering innovative ideas to improve user experience, and addressed issues such as reducing email sending latency from 240 seconds to 12 seconds. I also identified a critical security vulnerability before deployment, protecting sensitive information for over 70 clients.",
     },
+    {
+      id: 5,
+      title: "Software Application Developer",
+      company_name: "Boeing",
+      company_url: "https://www.boeing.ca/",
+      location: "Montreal, Canada",
+      icon: boeing,
+      iconbg: "#fff",
+      date: "Dec 2024 - Present",
+      description:
+        "",
+    },
+
   ];
   
   export { experiences };

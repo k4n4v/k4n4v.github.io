@@ -2,6 +2,7 @@ import quartic from "./company/quartic.png";
 import molex from "./company/molex.jpg";
 import coderise from "./company/coderise.jpg";
 import tulip from "./company/tulip.jpg";
+import boeing from "./company/boeing.png";
 
 import me from "./me.jpg"
 import memoji from "./memoji.png";
@@ -18,6 +19,7 @@ export {
     molex,
     coderise,
     tulip,
+    boeing,
     me,
     memoji,
     resume,
