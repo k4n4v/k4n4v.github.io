@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css'
 
 const Experience = () => {
   return (
-    <section id='experience'>
+    <section id='experience' className='experience-section'>
       <h5>My Timeline</h5>
       <h2>Experiences</h2>
       <VerticalTimeline lineColor='var(--color-white)'>

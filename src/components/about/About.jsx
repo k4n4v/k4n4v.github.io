@@ -26,17 +26,12 @@ const About = () => {
             <article className='about__card'>
               <span className='about__icon'>🧑‍💻</span>
               <h5>Software Developer</h5>
-              <small>Software Application Developer @ Boeing</small>
+              <small>@ Boeing</small>
             </article>
             <article className='about__card'>
               <span className='about__icon'>🌎</span>
               <h5>Montreal, Canada</h5>
               <small>Originally from Toronto, Canada</small>
-            </article>
-            <article className='about__card'>
-              <span className='about__icon'>🌱</span>
-              <h5>Always Learning</h5>
-              <small>Currently learning DJing, French, and not breaking production</small>
             </article>
           </div>
         </div>

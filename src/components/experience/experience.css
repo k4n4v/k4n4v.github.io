@@ -36,3 +36,9 @@
     height: 60%;
     object-fit: contain;
 }
+
+.experience-section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
