@@ -3,11 +3,10 @@
     flex-direction: column; /* Stacks the cards vertically */
     gap: 2.5rem; /* Space between the cards */
     align-items: center;
-
 }
 
 .portfolio__item {
-    width: 60%; /* Each card takes full width */
+    width: 80%;
     background: var(--color-bg-variant);
     padding: 2rem;
     border-radius: 2rem;
@@ -71,7 +70,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .portfolio__type h5 {

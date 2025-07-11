@@ -42,10 +42,10 @@ const Portfolio = () => {
                       ))}
                     </div>
                   </div>
-                  {image && (
-                    <div className='portfolio__item-image'>
+                  {image && source_code_link && (
+                    <a href={source_code_link} target="_blank" rel="noopener noreferrer" className='portfolio__item-image'>
                       <img src={image} alt={title} />
-                    </div>
+                    </a>
                   )}
                 </div>
               </article>
