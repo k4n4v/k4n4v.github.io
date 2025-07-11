@@ -28,7 +28,14 @@ const Portfolio = () => {
                   <div className='portfolio__item-info'>
                     <h5>{type}</h5>
                     <h3>{title}</h3>
-                    <h5>{description}</h5>
+                    <h5>
+                      {description.split('\n').map((line, idx) => (
+                        <React.Fragment key={idx}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </h5>
                     <div className='tags'>
                       {tags.map(tag => (
                         <h4 key={tag.name} className='tag'>{tag.name}</h4>
