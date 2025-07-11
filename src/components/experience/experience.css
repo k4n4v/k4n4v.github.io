@@ -1,0 +1,38 @@
+.experince__date {
+    color: var(--color-white);
+}
+
+.experience__title  {
+    color: var(--color-white);
+}
+
+.experience__company {
+    color: var(--color-primary);
+}
+
+.experience__company a:hover {
+    color: var(--color-white);
+}
+
+.experience__location {
+    color: var(--color-primary);
+}
+
+.experience__description {
+    color: var(--color-light);
+    padding-top: 1rem;
+}
+
+.experince__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-image {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}

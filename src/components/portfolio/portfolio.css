@@ -1,0 +1,107 @@
+.portfolio__container {
+    display: flex;
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 2.5rem; /* Space between the cards */
+    align-items: center;
+}
+
+.portfolio__item {
+    width: 80%;
+    background: var(--color-bg-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio__item h3, .portfolio__item h5 {
+    margin: 1rem 0;
+}
+
+.portfolio__item h5 {
+    color: var(--color-light);
+}
+
+.portfolio__item h4 {
+    margin: 0.5rem 0;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    color: rgb(116, 121, 121);
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.portfolio__icon {
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+.portfolio__item-image {
+    width: 200px;
+    height: auto; 
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    flex-shrink: 0;
+}
+
+.portfolio__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+}
+
+.portfolio__links {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+.portfolio__type h5 {
+    margin-bottom: 0.5rem;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .portfolio__item {
+        width: 100%; /* Ensures full width on medium screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        gap: 1rem; /* Reduce gap between cards on smaller screens */
+    }
+
+    .portfolio__item {
+        width: 100%; /* Each card takes full width */
+    }
+
+    .portfolio__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio__item-image {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%; /* Full width for images on small screens */
+        height: auto;
+    }
+}
