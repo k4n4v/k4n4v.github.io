@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -14,21 +14,21 @@
       "type": "circle"
     },
     "opacity": {
-      "value": 0.1
+      "value": 0.15
     },
     "size": {
       "value": 3
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 100,
       "color": "#4db5ff",
-      "opacity": 0.4,
+      "opacity": 0,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 2
+      "speed": 0.7
     }
   }
 }
