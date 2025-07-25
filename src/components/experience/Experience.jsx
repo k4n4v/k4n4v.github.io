@@ -12,7 +12,7 @@ const Experience = () => {
       <h2>Experiences</h2>
       <VerticalTimeline lineColor='var(--color-white)'>
         {
-          [...experiences].reverse().map(({ id, title, company_name, company_url, location, icon, iconbg, date, description }) => (
+          [...experiences].reverse().map(({ id, title, company_name, company_url, location, icon, iconbg, date, descriptions, achievements }) => (
             <VerticalTimelineElement
               key={id}
               className="vertical-timeline-element--work"
@@ -34,8 +34,23 @@ const Experience = () => {
               <a className="experience__company" href={company_url} target="_blank" rel="noopener noreferrer">
                 <h4>{company_name}</h4>
               </a>
-              {/*<h4 className='experience__location'>{location}</h4>*/}
-              <h5 className='experience__description'>{description}</h5>
+              <div className="experience__content">
+                <ul className="experience__descriptions">
+                  {descriptions.map((desc, index) => (
+                    <li key={index}>{desc}</li>
+                  ))}
+                </ul>
+                {achievements && achievements.length > 0 && (
+                  <div className="experience__achievements">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                      {achievements.map((achievement, index) => (
+                        <li key={index}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
             </VerticalTimelineElement>
           ))
         }

@@ -21,6 +21,7 @@
 .experience__description {
     color: var(--color-light);
     padding-top: 1rem;
+    white-space: pre-line;
 }
 
 .experince__icon {
@@ -41,4 +42,50 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 8rem;
+}
+
+.experience__content {
+    padding-top: 1rem;
+    color: var(--color-light);
+}
+
+.experience__descriptions,
+.experience__achievements ul {
+    list-style-type: none;
+    padding-left: 1.2rem;
+}
+
+.experience__descriptions li,
+.experience__achievements li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 0.8rem;
+}
+
+.experience__descriptions li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: -1.2rem;
+}
+
+.experience__achievements {
+    margin-top: 1.5rem;
+}
+
+.experience__achievements h4 {
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.experience__achievements li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: -1.2rem;
 }

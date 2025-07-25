@@ -20,8 +20,8 @@ const About = () => {
           <div className="about__cards">
             <article className='about__card'>
             <span className='about__icon'>🎓</span>
-              <h5>Computer Engineer</h5>
-              <small>Bachalor of Engineering</small>
+              <h5>Computer Engineering</h5>
+              <small></small>
             </article>
             <article className='about__card'>
               <span className='about__icon'>🧑‍💻</span>
@@ -31,7 +31,7 @@ const About = () => {
             <article className='about__card'>
               <span className='about__icon'>🌎</span>
               <h5>Montreal, Canada</h5>
-              <small>Originally from Toronto, Canada</small>
+              <small></small>
             </article>
           </div>
         </div>
