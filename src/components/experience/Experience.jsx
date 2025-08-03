@@ -12,7 +12,7 @@ const Experience = () => {
       <h2>Experiences</h2>
       <VerticalTimeline lineColor='var(--color-white)'>
         {
-          [...experiences].reverse().map(({ id, title, company_name, company_url, location, icon, iconbg, date, descriptions, achievements }) => (
+          [...experiences].reverse().map(({ id, title, company_name, company_url, location, icon, iconbg, date, descriptions, achievements, tags }) => (
             <VerticalTimelineElement
               key={id}
               className="vertical-timeline-element--work"
@@ -48,6 +48,15 @@ const Experience = () => {
                         <li key={index}>{achievement}</li>
                       ))}
                     </ul>
+                  </div>
+                )}
+                {tags && tags.length > 0 && (
+                  <div className="experience__tags">
+                    <div className="tags">
+                      {tags.map(tag => (
+                        <h4 key={tag} className="tag">{tag}</h4>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>

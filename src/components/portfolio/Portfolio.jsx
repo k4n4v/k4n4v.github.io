@@ -38,7 +38,7 @@ const Portfolio = () => {
                     </h5>
                     <div className='tags'>
                       {tags.map(tag => (
-                        <h4 key={tag.name} className='tag'>{tag.name}</h4>
+                        <h4 key={tag} className='tag'>{tag}</h4>
                       ))}
                     </div>
                   </div>

@@ -16,8 +16,15 @@ const experiences = [
       icon: quartic,
       iconbg: "#fff",
       date: "May 2021 - Aug 2021",
-      descriptions: [],
-      achievements: [],
+      descriptions: [
+        "🧠 AI Batch Process Optimizer",
+        "Developed REST APIs with Python, pandas, Postman, and Django for a medical AI process optimizer, enabling large Excel data processing and improving system integration and functionality.",
+      ],
+      achievements: [
+        "Integrated a responsive graph visualization feature using React and GraphQL, which was well-received by the client and helped secure a major deal.",
+        "Automated Docker certification verification, improving portability and ease of use by 50%, and optimized PostgreSQL tables and queries for efficient data handling.",
+      ],
+      tags: ["Python", "Django", "Postman", "React", "GraphQL", "PostgreSQL", "Docker"],
     },
     {
       id: 2,
@@ -28,8 +35,14 @@ const experiences = [
       icon: molex,
       iconbg: "#fff",
       date: "Jan 2022 - Aug 2022",
-      descriptions: [],
-      achievements: [],
+      descriptions: [
+        "🤖 Industrial Communications",
+        "Developed and debugged automated test scripts in a CI/CD pipeline using Python, Selenium, and Appium, achieving 90% front-end and 50% back-end test coverage and significantly improving testing efficiency and accuracy.",
+      ],
+      achievements: [
+        "Identified and resolved dependency conflicts by introducing pyenv virtual environments, combining 3 separate test repositories into 1 streamlined codebase which reduced code duplication and simplified maintenance and bug tracking.",
+      ],
+      tags: ["Python", "Selenium", "Appium", "CI/CD", "pyenv"],
     },
     {
       id: 3,
@@ -40,8 +53,13 @@ const experiences = [
       icon: coderise,
       iconbg: "#fff",
       date: "Jul 2023 - Aug 2023",
-      descriptions: [],
+      descriptions: [
+        "🛒 Shopify App",
+        "Developed REST APIs for a subscription-based Shopify app using Python",
+        "I had some extra time, so I decided to take an unpaid internship to learn more about building client applications and improve my Python skills.",
+      ],
       achievements: [],
+      tags: ["Python", "Shopify API", "REST APIs"],
     },
     {
       id: 4,
@@ -52,8 +70,14 @@ const experiences = [
       icon: tulip,
       iconbg: "#fff",
       date: "Sept 2023 - Dec 2023",
-      descriptions: [],
-      achievements: [],
+      descriptions: [
+        "📲 Customer Relationship Management (CRM) iOS apps",
+        "Executed daily regression tests and managed sprint tickets for CRM and POS iOS applications.",
+      ],
+      achievements: [
+        "Reduced in-app email latency from 240s to 12s by implementing batch processing, improving mass email delivery speed, and identified a critical security vulnerability pre-deployment, safeguarding sensitive information of 70+ clients.",
+      ],
+      tags: ["iOS", "CRM", "Regression Testing", "Batch Processing"],
     },
     {
       id: 5,
@@ -64,8 +88,12 @@ const experiences = [
       icon: boeing,
       iconbg: "#fff",
       date: "Dec 2024 - Present",
-      descriptions: [],
+      descriptions: [
+        "🧑‍✈️ Crew Roster Tracking",
+        
+      ],
       achievements: [],
+      tags: [],
     },
 
   ];

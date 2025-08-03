@@ -89,3 +89,25 @@
     position: absolute;
     left: -1.2rem;
 }
+
+.experience__tags {
+    margin-top: 1.5rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    color: rgb(116, 121, 121);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: rgba(116, 121, 121, 0.1);
+    border-radius: 0.3rem;
+    border: 1px solid rgba(116, 121, 121, 0.2);
+}
