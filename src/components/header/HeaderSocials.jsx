@@ -1,12 +1,14 @@
 import React from 'react'
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
         <a href='https://www.linkedin.com/in/kanav-s/' target='_blank' rel="noopener noreferrer"><BsLinkedin /></a>
         <a href='https://github.com/k4n4v' target='_blank' rel="noopener noreferrer"><FaGithub /></a>
+        <a href='mailto:kanav.12@hotmail.com' target='_blank' rel="noopener noreferrer"><AiOutlineMail /></a>
     </div>
   )
 }

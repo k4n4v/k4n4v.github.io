@@ -3,11 +3,10 @@
     flex-direction: column; /* Stacks the cards vertically */
     gap: 2.5rem; /* Space between the cards */
     align-items: center;
-
 }
 
 .portfolio__item {
-    width: 60%; /* Each card takes full width */
+    width: 80%;
     background: var(--color-bg-variant);
     padding: 2rem;
     border-radius: 2rem;
@@ -20,6 +19,8 @@
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio__content {
@@ -43,6 +44,10 @@
     color: rgb(116, 121, 121);
     display: inline-block;
     margin-right: 1rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(116, 121, 121, 0.1);
+    border-radius: 0.3rem;
+    border: 1px solid rgba(116, 121, 121, 0.2);
 }
 
 .portfolio__icon {
@@ -57,6 +62,14 @@
     overflow: hidden;
     margin-left: 1.5rem;
     flex-shrink: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.portfolio__item-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio__item-image img {
@@ -71,7 +84,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .portfolio__type h5 {
