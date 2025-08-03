@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.7feb5bf3.css",
-    "main.js": "/static/js/main.e6823c49.js",
-    "static/media/me.jpg": "/static/media/me.41b488d7a30ed51632c8.jpg",
+    "main.css": "/static/css/main.13a969bf.css",
+    "main.js": "/static/js/main.ec5874c5.js",
+    "static/media/me.jpg": "/static/media/me.fc69c932be8870c3702e.jpg",
     "static/media/lyrics_translator.png": "/static/media/lyrics_translator.cd143dfe767c476a2cb0.png",
     "static/media/ad.jpg": "/static/media/ad.4af9adf7d814581d8663.jpg",
     "static/media/security_camera.jpg": "/static/media/security_camera.40e278046a7e7c6d3694.jpg",
     "static/media/scraper.png": "/static/media/scraper.8b73b958a5574015be62.png",
+    "static/media/boeing.png": "/static/media/boeing.4f5f87e4c893fccc94bb.png",
     "static/media/resume.pdf": "/static/media/resume.092100fb1e56cb316983.pdf",
     "static/media/memoji.png": "/static/media/memoji.79ecd4ed96cd7c14de6d.png",
     "static/media/molex.jpg": "/static/media/molex.2fccb346fbca4e56586f.jpg",
     "static/media/coderise.jpg": "/static/media/coderise.481055d1eafb6c45a9fd.jpg",
     "index.html": "/index.html",
-    "main.7feb5bf3.css.map": "/static/css/main.7feb5bf3.css.map",
-    "main.e6823c49.js.map": "/static/js/main.e6823c49.js.map"
+    "main.13a969bf.css.map": "/static/css/main.13a969bf.css.map",
+    "main.ec5874c5.js.map": "/static/js/main.ec5874c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7feb5bf3.css",
-    "static/js/main.e6823c49.js"
+    "static/css/main.13a969bf.css",
+    "static/js/main.ec5874c5.js"
   ]
 }
