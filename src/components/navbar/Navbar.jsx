@@ -12,6 +12,30 @@ const sections = [
 const Navbar = () => {
   const [active, setActive] = useState('#');
 
+  const scrollToSection = (sectionId) => {
+    setActive(sectionId);
+    
+    if (sectionId === '#') {
+      // Scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      const section = sections.find(s => s.id === sectionId);
+      if (section) {
+        const element = document.getElementById(section.selector);
+        if (element) {
+          const offsetTop = element.offsetTop - 80; // Account for navbar height
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       let current = '#';
@@ -48,10 +72,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="/#" onClick={() => setActive('#')} className={active === '#' ? 'active' : ''}><AiOutlineHome /></a>
-      <a href="/#about" onClick={() => setActive('#about')} className={active === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-      <a href="/#experience" onClick={() => setActive('#experience')} className={active === '#experience' ? 'active' : ''}><AiOutlineBook /></a>
-      <a href="/#portfolio" onClick={() => setActive('#portfolio')} className={active === '#portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></a>
+      <button onClick={() => scrollToSection('#')} className={active === '#' ? 'active' : ''}><AiOutlineHome /></button>
+      <button onClick={() => scrollToSection('#about')} className={active === '#about' ? 'active' : ''}><AiOutlineUser /></button>
+      <button onClick={() => scrollToSection('#experience')} className={active === '#experience' ? 'active' : ''}><AiOutlineBook /></button>
+      <button onClick={() => scrollToSection('#portfolio')} className={active === '#portfolio' ? 'active' : ''}><AiOutlineFolderOpen /></button>
     </nav>
   )
 }

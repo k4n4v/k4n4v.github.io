@@ -42,7 +42,8 @@
 .about__card:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
-    cursor: default;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .about__icon {

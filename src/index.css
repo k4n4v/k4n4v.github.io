@@ -11,8 +11,8 @@
 }
 
 :root {
-    --color-bg: #1f1f1f;          /* Dark background for depth */
-    --color-bg-variant: #2c2c2c;  /* Slightly lighter gray for subtle contrast */
+    --color-bg: #0a0a0a;          /* Darkest part of gradient */
+    --color-bg-variant: #1a1a1a;  /* Slightly lighter gray for subtle contrast */
     --color-primary: #4db5ff;     /* Light blue for highlights */
     --color-primary-variant: rgba(77, 181, 255, 0.4); /* Soft version of the primary color */
     --color-white: #ffffff;       /* Pure white for text or borders */
@@ -35,9 +35,11 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background: var(--color-bg);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #0a0a0a 100%);
+    background-attachment: fixed;
     color: var(--color-white);
     line-height: 1.7;
+    min-height: 100vh;
 }
 
 /* ================= GENERAL STYLES ================= */

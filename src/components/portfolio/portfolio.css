@@ -19,6 +19,8 @@
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio__content {
@@ -56,6 +58,14 @@
     overflow: hidden;
     margin-left: 1.5rem;
     flex-shrink: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.portfolio__item-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio__item-image img {
